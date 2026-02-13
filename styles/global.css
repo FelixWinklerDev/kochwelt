@@ -1,8 +1,6 @@
 :root {
-  --main-green-color: #248912;
-  --main-grey-color: #e9e5e5;
-  --text-color-lighter: #aaa3a3;
-  --footer-bg-color: rgb(64, 62, 62);
+  --main-green-color: #008000;
+  --main-grey-color: #DCDCDC;
 }
 html,
 body {

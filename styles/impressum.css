@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    color: rgb(54, 194, 30);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.imprint{
+    margin-left: 100px;
+    margin-right: 100px;
+}

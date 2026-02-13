@@ -1,0 +1,14 @@
+@import "index.css";
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    background-color:  var(--main-grey-color);
+    margin: 5rem;
+    border-radius: 20px;
+}
+
+.sub-btn {
+    background-color: var(--main-green-color);
+}

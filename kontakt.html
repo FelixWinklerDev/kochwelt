@@ -1,12 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/index.css">
-  <title>Document</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/kontakt.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <a class="logo" href="./index.html"
+            ><img src="./assets/img/global/logo.png" alt="logo"
+          /></a>
+          <nav>
+            <ul>
+              <li class="active-link"><a href="./index.html">Start</a></li>
+              <li><a href="./recipe.html">Rezept des Tages</a></li>
+              <li><a href="./kontakt.html">Kontakt</a></li>
+              <li><a href="./impressum.html">Impressum</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+    <form action="">
+      <h3>Kontaktiere uns</h3>
+      <label for="name">Dein Name:</label>
+      <input id="name" type="text" required />
+      <label for="email">Deine E-Mail:</label>
+      <input id="email" type="email" required />
+      <label for="message">Deine Nachricht</label>
+      <input id="message" type="textarea" required />
+      <input class="sub-btn" type="submit" value="Abschicken" />
+    </form>
+    </section>
+  </body>
 </html>

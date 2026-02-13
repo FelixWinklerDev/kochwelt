@@ -21,8 +21,8 @@ header.header {
   li {
     border-bottom: 3px solid transparent;
     &:hover {
-      color: green;
-      border-bottom: 3px solid green;
+      color: var(--main-green-color);
+      border-bottom: 3px solid var(--main-green-color);
     }
   }
   .logo {

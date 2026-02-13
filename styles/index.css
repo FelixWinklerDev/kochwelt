@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "fonts.css";
 @import "global.css";
 @import "recipe.css";
 @import "kontakt.css";
@@ -75,4 +76,34 @@
       object-position: center;
     }
   }
+}
+
+/* ============================================================
+DESKTOP FIRST APPROACH (Standard -> Mobile)
+============================================================ */
+
+/* 1. Large Desktops / 4K - Below 1920px* */
+@media screen and (max-width: 1919px) {
+  /* *Styles for standard screens, adjusting from UltraWide */
+}
+
+/* 2. Standard Laptops (Your MacBook) - Below 1440px* */
+@media screen and (max-width: 1439px) {
+  /* *Adjustments for your main workspace screen size */
+}
+
+/* 3. Tablets (Landscape) / Small Laptops - Below 1024px **/
+@media screen and (max-width: 1023px) {
+  /* *Main navigation often changes to a burger menu here */
+}
+
+/* 4. Tablets (Portrait) - Below 768px **/
+@media screen and (max-width: 767px) {
+  /* *Elements start to stack vertically for mobile view */
+}
+
+/* 5. Smartphones - Below 480px* */
+@media screen and (max-width: 479px) {
+  /* *Final tweaks for small screens like iPhone SE */
+
 }

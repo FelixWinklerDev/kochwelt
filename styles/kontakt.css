@@ -31,7 +31,7 @@ textarea {
   justify-content: center;
 }
 
-.sub-btn input{
+.sub-btn input {
   background-color: var(--main-green-color);
   border-radius: 0;
   width: 25%;

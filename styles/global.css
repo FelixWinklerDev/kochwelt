@@ -1,6 +1,21 @@
 :root {
   --main-green-color: #36c21e;
 }
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+}
+header.header,
+footer.footer {
+  flex-shrink: 0;
+}
 
 .container {
   /* 1280px */

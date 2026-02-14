@@ -1,0 +1,29 @@
+@import "index.css";
+
+.recipe-img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 2rem 0;
+}
+
+.icon-section {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icon-section > div {
+    display: flex;
+    align-items: center;   
+    margin-right: 1.5rem;
+    background-color: var(--main-grey-color);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.icon-section img {
+    margin-right: 1rem;
+    width: 16px;
+    height: 16px;
+}

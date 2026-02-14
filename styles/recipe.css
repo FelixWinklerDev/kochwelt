@@ -10,6 +10,7 @@ input {
     height: 3.4rem;
     border-radius: 8px 0 0 8px;
     border: 1px solid var(--main-grey-color);
+    text-align: center;
 }
 
 button {
@@ -17,6 +18,34 @@ button {
     color: white;
     padding: 0.7rem 3.5rem;
     margin-left: 0;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+td {
+    height: 4rem;
+}
+
+td:first-child {
+    text-align: center;
+    border-radius: 1rem 0 0 1rem;
+
+}
+
+td:last-child {
+    padding-left: 1rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+table tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+table tr:nth-child(even) {
+  background-color: white;
 }
 
 .recipe-img {
@@ -58,5 +87,5 @@ button {
 .portion-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }

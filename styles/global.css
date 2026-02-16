@@ -24,13 +24,24 @@ footer.footer {
 .hamburger {
   display: none;
   font-size: 2.8rem;
+  color: #333;
   cursor: pointer;
+  border: solid 0.4rem #333;
+}
+
+.header-wrapper {
+  position: relative;
 }
 
 @media(max-width: 970px) {
-  a {
+  .active-link {
     display: none;
-
+  }
+  .sub-link {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
   }
 }
 

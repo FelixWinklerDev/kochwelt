@@ -1,184 +1,144 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/recipe.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./assets/img/global/logo_small.png"
-    />
-    <script src="./scripts/recipe-script.js" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/global/logo_small.png" />
+  <script src="./scripts/recipe-script.js" defer></script>
 
-    <title>Kochwelt</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-wrapper">
-          <a class="logo" href="./index.html"
-            ><img src="./assets/img/global/logo.png" alt="logo"
-          /></a>
-          <nav>
-            <ul>
-              <li class="active-link"><a href="./index.html">Start</a></li>
-              <li><a href="./recipe.html">Rezept des Tages</a></li>
-              <li><a href="./contact.html">Kontakt</a></li>
-              <li><a href="./impressum.html">Impressum</a></li>
-            </ul>
-          </nav>
+  <title>Kochwelt</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <a class="logo" href="./index.html"><img src="./assets/img/global/logo.png" alt="logo" /></a>
+        <nav>
+          <ul>
+            <li class="active-link"><a href="./index.html">Start</a></li>
+            <li><a href="./recipe.html">Rezept des Tages</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a href="./impressum.html">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="recipe-page">
+    <section class="container">
+      <h2>Griechischer Bauernsalat</h2>
+      <img class="recipe-img" src="./assets/img/recipe/salad.jpg" alt="ein Bauernsalat" />
+      <div class="icon-section">
+        <div>
+          <img src="./assets/img/icons/clock-regular.svg" alt="clock icon" />15 Min.
+        </div>
+        <div>
+          <img src="./assets/img/icons/brain-solid.svg" alt="brain icon" />simpel
+        </div>
+        <div>
+          <img src="./assets/img/icons/calendar-alt-regular.svg" alt="calendar icon" />28.09.2020
         </div>
       </div>
-    </header>
+      <div class="line"></div>
+      <div class="portion-wrapper">
+        <label for="ingredient">Zutaten für</label><input type="number" name="ingredient" id="ingredient" min="1" />
+        <button id="multiply">Portionen</button>
+      </div>
+      <table>
+        <tr>
+          <td>1</td>
+          <td>Salatgurke</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Paprikaschot(n), rot und grün</td>
+        </tr>
+        <tr>
+          <td>500g</td>
+          <td>Tomate(n)</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Zwiebeln</td>
+        </tr>
+        <tr>
+          <td>200g</td>
+          <td>Schafskäse (n)</td>
+        </tr>
+        <tr>
+          <td>100g</td>
+          <td>Oliven, schwarze</td>
+        </tr>
+        <tr>
+          <td>Prise</td>
+          <td>Salz und Pfeffer</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Zitrone (n)</td>
+        </tr>
+        <tr>
+          <td>125ml</td>
+          <td>Olivenöl</td>
+        </tr>
+        <tr>
+          <td>etwas</td>
+          <td>Orgeano</td>
+        </tr>
+      </table>
 
-    <main class="recipe-page">
-      <section class="container">
-        <h2>Griechischer Bauernsalat</h2>
-        <img
-          class="recipe-img"
-          src="./assets/img/recipe/salad.jpg"
-          alt="ein Bauernsalat"
-        />
-        <div class="icon-section">
-          <div>
-            <img
-              src="./assets/img/icons/clock-regular.svg"
-              alt="clock icon"
-            />15 Min.
-          </div>
-          <div>
-            <img
-              src="./assets/img/icons/brain-solid.svg"
-              alt="brain icon"
-            />simpel
-          </div>
-          <div>
-            <img
-              src="./assets/img/icons/calendar-alt-regular.svg"
-              alt="calendar icon"
-            />28.09.2020
-          </div>
-        </div>
-        <div class="line"></div>
-        <div class="portion-wrapper">
-          <label for="ingredient">Zutaten für</label
-          ><input type="number" name="ingredient" id="ingredient" min="1" />
-          <button id="multiply">Portionen</button>
-        </div>
-        <table>
-          <tr>
-            <td>1</td>
-            <td>Salatgurke</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Paprikaschot(n), rot und grün</td>
-          </tr>
-          <tr>
-            <td>500g</td>
-            <td>Tomate(n)</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Zwiebeln</td>
-          </tr>
-          <tr>
-            <td>200g</td>
-            <td>Schafskäse (n)</td>
-          </tr>
-          <tr>
-            <td>100g</td>
-            <td>Oliven, schwarze</td>
-          </tr>
-          <tr>
-            <td>Prise</td>
-            <td>Salz und Pfeffer</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Zitrone (n)</td>
-          </tr>
-          <tr>
-            <td>125ml</td>
-            <td>Olivenöl</td>
-          </tr>
-          <tr>
-            <td>etwas</td>
-            <td>Orgeano</td>
-          </tr>
-        </table>
+      <h3>Zubereitung</h3>
 
-        <h3>Zubereitung</h3>
-
-        <div class="icon-section">
-          <div>
-            <img
-              src="./assets/img/icons/clock-regular.svg"
-              alt="clock icon"
-            />ca. 15 Minuten
-          </div>
-          <div>
-            <div>
-              <img
-                src="./assets/img/icons/clock-regular.svg"
-                alt="clock icon"
-              />Gesamtzeit ca. 15 Minuten
-            </div>
-          </div>
+      <div class="icon-section">
+        <div>
+          <img src="./assets/img/icons/clock-regular.svg" alt="clock icon" />ca. 15 Minuten
         </div>
-        <p>
-          Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden.
-          Paprika waschen, entkernen und in dünne Streifen schneiden. Tomaten
-          waschen und achteln. Zwiebeln schälen und in feine Ringe schneiden.
-          Schafskäse würfeln und mit Oregano bestreuen. Oliven abgießen und mit
-          Gurke, Paprika, Tomaten, Zwiebeln und Schafskäse in eine Schüssel
-          geben. Olivenöl, Zitronensaft, Salz und Pfeffer zu einer Sauce
-          verrühren und über den Salat gießen. Umrühren.
-        </p>
-        <h4>Rezept erstellt von</h4>
-        <div class="recipe-creater">
-          <img
-            src="./assets/img/recipe/marcohelge.jpg"
-            alt="picture of the creater"
-          />
-          <span>Marco-Helge Alsen</span>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-wrapper">
-          <a class="logo" href="./index.html"
-            ><img src="./assets/img/global/logo.png" alt="logo"
-          /></a>
-          <div class="links_wrapper">
-            <ul>
-              <li>
-                <a target="_blank" href="http://facebook.com"
-                  ><img
-                    src="./assets/img/global/facebook-follow.svg"
-                    alt="Facebook"
-                /></a>
-              </li>
-              <li>
-                <a target="_blank" href="http://instagram.com"
-                  ><img
-                    src="./assets/img/global/instagram-follow.svg"
-                    alt="Instagram"
-                /></a>
-              </li>
-              <li>
-                <a target="_blank" href="http://twitter.com"
-                  ><img
-                    src="./assets/img/global/x-social-media-follow.svg"
-                    alt="Twitter"
-                /></a>
-              </li>
-            </ul>
+        <div>
+          <div>
+            <img src="./assets/img/icons/clock-regular.svg" alt="clock icon" />Gesamtzeit ca. 15 Minuten
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+      <p>
+        Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden.
+        Paprika waschen, entkernen und in dünne Streifen schneiden. Tomaten
+        waschen und achteln. Zwiebeln schälen und in feine Ringe schneiden.
+        Schafskäse würfeln und mit Oregano bestreuen. Oliven abgießen und mit
+        Gurke, Paprika, Tomaten, Zwiebeln und Schafskäse in eine Schüssel
+        geben. Olivenöl, Zitronensaft, Salz und Pfeffer zu einer Sauce
+        verrühren und über den Salat gießen. Umrühren.
+      </p>
+      <h4>Rezept erstellt von</h4>
+      <div class="recipe-creater">
+        <img src="./assets/img/recipe/marcohelge.jpg" alt="picture of the creater" />
+        <span>Marco-Helge Alsen</span>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <a class="logo" href="./index.html"><img src="./assets/img/global/logo.png" alt="logo" /></a>
+        <div class="links_wrapper">
+          <ul>
+            <li>
+              <a target="_blank" href="http://facebook.com"><img src="./assets/img/global/facebook-follow.svg"
+                  alt="Facebook" /></a>
+            </li>
+            <li>
+              <a target="_blank" href="http://instagram.com"><img src="./assets/img/global/instagram-follow.svg"
+                  alt="Instagram" /></a>
+            </li>
+            <li>
+              <a target="_blank" href="http://twitter.com"><img src="./assets/img/global/x-social-media-follow.svg"
+                  alt="Twitter" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>

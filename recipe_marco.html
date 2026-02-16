@@ -1,185 +1,148 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./assets/img/global/logo_small.png"
-    />
-    <script src="./scripts/recipe-script.js" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/global/logo_small.png" />
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/recipe.css" />
+  <script src="./scripts/recipe-script.js" defer></script>
 
-    <title>Kochwelt</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-wrapper">
-          <a class="logo" href="./index.html"
-            ><img src="./assets/img/global/logo.png" alt="logo"
-          /></a>
-          <nav>
-            <ul>
-              <li class="active-link"><a href="./index.html">Start</a></li>
-              <li><a href="./recipe.html">Rezept des Tages</a></li>
-              <li><a href="./contact.html">Kontakt</a></li>
-              <li><a href="./impressum.html">Impressum</a></li>
-            </ul>
-          </nav>
+  <title>Kochwelt</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <a class="logo" href="./index.html"><img src="./assets/img/global/logo.png" alt="logo" /></a>
+        <nav>
+          <ul>
+            <li class="active-link"><a href="./index.html">Start</a></li>
+            <li><a href="./recipe.html">Rezept des Tages</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a href="./impressum.html">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="recipe-page">
+    <section class="container">
+      <h2>Spaghetti Bolognese</h2>
+      <img class="recipe-img" src="./assets/img/recipe/spaghetti.png" alt="ein Bauernsalat" />
+      <div class="time-details-wrapper">
+        <div>
+          <img src="./assets/img/icons/clock-regular.svg" alt="clock icon" />20 Min.
+        </div>
+        <div>
+          <img src="./assets/img/icons/brain-solid.svg" alt="brain icon" />Normal
+        </div>
+        <div>
+          <img src="./assets/img/icons/calendar-alt-regular.svg" alt="calendar icon" />16.02.2026
         </div>
       </div>
-    </header>
-
-    <main class="recipe-page">
-      <section class="container">
-        <h2>Spaghetti Bolognese</h2>
-        <img
-          class="recipe-img"
-          src="./assets/img/recipe/spaghetti.png"
-          alt="ein Bauernsalat"
-        />
-        <div class="time-details-wrapper">
-          <div>
-            <img
-              src="./assets/img/icons/clock-regular.svg"
-              alt="clock icon"
-            />20 Min.
-          </div>
-          <div>
-            <img
-              src="./assets/img/icons/brain-solid.svg"
-              alt="brain icon"
-            />Normal
-          </div>
-          <div>
-            <img
-              src="./assets/img/icons/calendar-alt-regular.svg"
-              alt="calendar icon"
-            />16.02.2026
-          </div>
+      <div class="line"></div>
+      <div class="portion-wrapper">
+        <label for="ingredient">Zutaten für</label><input type="number" name="ingredient" id="ingredient" min="1" />
+        <button id="multiply">Portionen</button>
+      </div>
+      <table>
+        <tr>
+          <td>1</td>
+          <td>Zwiebel(n)</td>
+        </tr>
+        <tr>
+          <td>1 Zehe/n</td>
+          <td>Knoblauch</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Möhre(n)</td>
+        </tr>
+        <tr>
+          <td>500 g</td>
+          <td>Rinderhackfleisch</td>
+        </tr>
+        <tr>
+          <td>200 ml</td>
+          <td>Gemüsebrühe</td>
+        </tr>
+        <tr>
+          <td>70g</td>
+          <td>Tomatenmark</td>
+        </tr>
+        <tr>
+          <td>Prise</td>
+          <td>Salz und Pfeffer</td>
+        </tr>
+        <tr>
+          <td>1 TL</td>
+          <td>Oregano</td>
+        </tr>
+        <tr>
+          <td>400 g</td>
+          <td>Tomaten, stückige</td>
+        </tr>
+        <tr>
+          <td>2 EL</td>
+          <td>Tomatenketchup</td>
+        </tr>
+        <tr>
+          <td>500 g</td>
+          <td>Spaghetti</td>
+        </tr>
+      </table>
+      <h3>Zubereitung</h3>
+      <div class="time-details-wrapper">
+        <div>
+          <img src="./assets/img/icons/clock-regular.svg" alt="clock icon" />ca. 20 Minuten
         </div>
-        <div class="line"></div>
-        <div class="portion-wrapper">
-          <label for="ingredient">Zutaten für</label
-          ><input type="number" name="ingredient" id="ingredient" min="1" />
-          <button id="multiply">Portionen</button>
-        </div>
-        <table>
-          <tr>
-            <td>1</td>
-            <td>Zwiebel(n)</td>
-          </tr>
-          <tr>
-            <td>1 Zehe/n</td>
-            <td>Knoblauch</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Möhre(n)</td>
-          </tr>
-          <tr>
-            <td>500 g</td>
-            <td>Rinderhackfleisch</td>
-          </tr>
-          <tr>
-            <td>200 ml</td>
-            <td>Gemüsebrühe</td>
-          </tr>
-          <tr>
-            <td>70g</td>
-            <td>Tomatenmark</td>
-          </tr>
-          <tr>
-            <td>Prise</td>
-            <td>Salz und Pfeffer</td>
-          </tr>
-          <tr>
-            <td>1 TL</td>
-            <td>Oregano</td>
-          </tr>
-          <tr>
-            <td>400 g</td>
-            <td>Tomaten, stückige</td>
-          </tr>
-          <tr>
-            <td>2 EL</td>
-            <td>Tomatenketchup</td>
-          </tr>
-          <tr>
-            <td>500 g</td>
-            <td>Spaghetti</td>
-          </tr>
-        </table>
-        <h3>Zubereitung</h3>
-        <div class="time-details-wrapper">
-          <div>
-            <img
-              src="./assets/img/icons/clock-regular.svg"
-              alt="clock icon"
-            />ca. 20 Minuten
-          </div>
-          <div>
-            <img
-              src="./assets/img/icons/clock-regular.svg"
-              alt="clock icon"
-            />Gesamtzeit ca. 1 Std. 5 Minuten
-          </div>
-        </div>
-        <p>
-          Erst Zwiebel, Knoblauch und Möhre schälen und in feine Würfel
-          schneiden. Dann das Hackfleisch in die Pfanne geben, langsam erhitzen
-          und im eigenen Fett unter Rühren anbraten. Salzen und pfeffern.
-          Zwiebeln, Knoblauch und Möhren dazugeben und kurz mitbraten. Mit der
-          Brühe ablöschen. Dann Tomatenmark, Oregano, die stückigen Tomaten und
-          Tomatenketchup unterrühren. Etwa 40 Minuten einkochen lassen. Die
-          Spaghetti in Salzwasser bissfest kochen. Durch ein Sieb abgießen, mit
-          kaltem Wasser abschrecken und zusammen mit der Sauce servieren.
-        </p>
-        <h4>Rezept erstellt von</h4>
-        <div class="recipe-creater">
-          <img
-            src="./assets/img/recipe/marcohelge.jpg"
-            alt="picture of the creater"
-          />
-          <span>Marco-Helge Alsen</span>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-wrapper">
-          <a class="logo" href="./index.html"
-            ><img src="./assets/img/global/logo.png" alt="logo"
-          /></a>
-          <div class="links_wrapper">
-            <ul>
-              <li>
-                <a target="_blank" href="http://facebook.com"
-                  ><img
-                    src="./assets/img/global/facebook-follow.svg"
-                    alt="Facebook"
-                /></a>
-              </li>
-              <li>
-                <a target="_blank" href="http://instagram.com"
-                  ><img
-                    src="./assets/img/global/instagram-follow.svg"
-                    alt="Instagram"
-                /></a>
-              </li>
-              <li>
-                <a target="_blank" href="http://twitter.com"
-                  ><img
-                    src="./assets/img/global/x-social-media-follow.svg"
-                    alt="Twitter"
-                /></a>
-              </li>
-            </ul>
-          </div>
+        <div>
+          <img src="./assets/img/icons/clock-regular.svg" alt="clock icon" />Gesamtzeit ca. 1 Std. 5 Minuten
         </div>
       </div>
-    </footer>
-  </body>
+      <p>
+        Erst Zwiebel, Knoblauch und Möhre schälen und in feine Würfel
+        schneiden. Dann das Hackfleisch in die Pfanne geben, langsam erhitzen
+        und im eigenen Fett unter Rühren anbraten. Salzen und pfeffern.
+        Zwiebeln, Knoblauch und Möhren dazugeben und kurz mitbraten. Mit der
+        Brühe ablöschen. Dann Tomatenmark, Oregano, die stückigen Tomaten und
+        Tomatenketchup unterrühren. Etwa 40 Minuten einkochen lassen. Die
+        Spaghetti in Salzwasser bissfest kochen. Durch ein Sieb abgießen, mit
+        kaltem Wasser abschrecken und zusammen mit der Sauce servieren.
+      </p>
+      <h4>Rezept erstellt von</h4>
+      <div class="recipe-creater">
+        <img src="./assets/img/recipe/marcohelge.jpg" alt="picture of the creater" />
+        <span>Marco-Helge Alsen</span>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <a class="logo" href="./index.html"><img src="./assets/img/global/logo.png" alt="logo" /></a>
+        <div class="links_wrapper">
+          <ul>
+            <li>
+              <a target="_blank" href="http://facebook.com"><img src="./assets/img/global/facebook-follow.svg"
+                  alt="Facebook" /></a>
+            </li>
+            <li>
+              <a target="_blank" href="http://instagram.com"><img src="./assets/img/global/instagram-follow.svg"
+                  alt="Instagram" /></a>
+            </li>
+            <li>
+              <a target="_blank" href="http://twitter.com"><img src="./assets/img/global/x-social-media-follow.svg"
+                  alt="Twitter" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>

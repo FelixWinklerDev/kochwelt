@@ -1,49 +1,45 @@
-.contact-page {
-  display: flex;
-  align-items: center;
-
-  .form-wrapper {
-    width: 50%;
-    margin: 0 auto;
+.send-mail-page {
+  
+  h2 {
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
   }
 
   h3 {
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
   }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem;
-    background-color: var(--main-grey-color);
-    border-radius: 16px;
+  figcaption {
+    font-size: 1.6rem;
+    margin: 0.5rem 0 2rem 0;
+    font-style: italic;
   }
 
-  input {
-    border: none;
-    border-radius: 8px;
-    height: 3.2rem;
-    margin: 0 0 3rem 0;
-  }
-
-  textarea {
-    height: 18rem;
-    border: none;
-    border-radius: 8px;
-    margin: 0 0 3rem 0;
-  }
-
-  .sub-btn {
-    display: flex;
-    justify-content: center;
-  }
-
-  .sub-btn input {
+  button {
     background-color: var(--main-green-color);
-    border-radius: 0;
-    width: 25%;
-    margin: 0;
     color: white;
+    padding: 0.7rem 3.5rem;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .recipe-img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .social-media-wrapper {
+    display: flex;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+  }
+
+  .social-media-wrapper img {
+    width: 12rem;
+    padding-right: 2rem;
   }
 }
 
@@ -64,40 +60,14 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
 /* 3. Tablets (Landscape) / Small Laptops - Below 1024px **/
 @media screen and (max-width: 1023px) {
   /* *Main navigation often changes to a burger menu here */
-  .contact-page {
-    .form-wrapper {
-      width: 50%;
-    }
-
-    .sub-btn input {
-      width: 35%;
-    }
-  }
 }
 
 /* 4. Tablets (Portrait) - Below 768px **/
 @media screen and (max-width: 767px) {
   /* *Elements start to stack vertically for mobile view */
-  .contact-page {
-    .form-wrapper {
-      width: 80%;
-    }
-    .sub-btn input {
-      width: 35%;
-    }
-  }
 }
 
 /* 5. Smartphones - Below 480px* */
 @media screen and (max-width: 479px) {
   /* *Final tweaks for small screens like iPhone SE */
-  .contact-page {
-    .form-wrapper {
-      width: 99%;
-      margin: 0 auto;
-    }
-    .sub-btn input {
-      width: 55%;
-    }
-  }
 }

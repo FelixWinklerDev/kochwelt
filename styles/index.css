@@ -44,6 +44,11 @@
   .recipes-wrapper {
     display: flex;
     justify-content: space-between;
+    a {
+      &:hover {
+        scale: calc(1.01)
+      }
+    }
     img {
       border-radius: 8px;
       aspect-ratio: 1/1;

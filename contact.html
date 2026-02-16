@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="./styles/fonts.css">
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/contact.css" />
-  <script src="./scripts/form-script.js"></script>
+  <script src="./scripts/global-script.js" defer></script>
+  <script src="./scripts/form-script.js" defer></script>
   <title>Kochwelt</title>
 </head>
 <body>
@@ -30,16 +31,16 @@
   <main class="contact-page">
     <section class="container">
       <div class="form-wrapper">
-      <form onsubmit="sendMail(event)">
-        <h3>Kontaktiere uns</h3>
-        <label for="name">Dein Name:</label>
-        <input id="name" name="name" type="text" required />
-        <label for="email">Deine E-Mail:</label>
-        <input id="email" name="email" type="email" required />
-        <label for="message">Deine Nachricht</label>
-        <textarea id="message" name="message" type="textarea" required></textarea>
-        <div class="sub-btn"><input type="submit" value="Abschicken" /></div>
-      </form>
+        <form onsubmit="sendMail(event)">
+          <h3>Kontaktiere uns</h3>
+          <label for="name">Dein Name:</label>
+          <input id="name" name="name" type="text" required />
+          <label for="email">Deine E-Mail:</label>
+          <input id="email" name="email" type="email" required />
+          <label for="message">Deine Nachricht</label>
+          <textarea id="message" name="message" type="textarea" required></textarea>
+          <div class="sub-btn"><input type="submit" value="Abschicken" /></div>
+        </form>
       </div>
     </section>
   </main>

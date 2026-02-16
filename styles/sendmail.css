@@ -1,5 +1,6 @@
 .send-mail-page {
 
+
   h2 {
     margin-top: 4rem;
     margin-bottom: 0.5rem;
@@ -16,12 +17,8 @@
     font-style: italic;
   }
 
-  button {
-    background-color: var(--main-green-color);
-    color: white;
-    padding: 0.7rem 3.5rem;
-    margin-left: 0;
-    margin-top: 2rem;
+  p {
+    margin-bottom: 1rem;
   }
 
   .recipe-img {

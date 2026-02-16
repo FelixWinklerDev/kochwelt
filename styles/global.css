@@ -24,11 +24,14 @@ footer.footer {
 
 .hamburger {
   display: none;
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: #333;
   cursor: pointer;
-  border: solid 0.2rem #333;
   padding: 1.2rem;
+}
+
+.hamburger:hover {
+  color: #008000;
 }
 
 .container {
@@ -39,10 +42,11 @@ footer.footer {
 }
 
 .button {
-  display: flex;
-  align-items: center;
+  display: inline-flex;
   justify-content: center;
+  align-items: center;
   font-size: 1.8rem;
+  margin: 0 auto;
   padding: 1.2rem 5rem;
   white-space: nowrap;
   width: 20rem;
@@ -50,6 +54,9 @@ footer.footer {
   border-radius: 0.1rem;
   color: #fff;
   background-color: var(--main-green-color);
+  &:hover {
+    scale: calc(1.01);
+  }
 }
 
 header.header {
@@ -127,5 +134,37 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
     display: none;
     position: absolute;
     top: 12rem;
+    right: 1rem;
+    background-color: #fff;
+    height: 35rem;
+    width: 20rem;
+  }
+  .start-page {
+    position: relative;
+  }
+
+  .header-wrapper ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 875px) {
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  footer {
+    min-height: 18rem;
+  }
+}
+
+@media(max-width: 475px) {
+  .links_wrapper ul {
+    flex-direction: column;
+  }
+  footer {
+    min-height: 32rem;
   }
 }

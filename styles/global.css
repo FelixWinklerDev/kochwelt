@@ -27,13 +27,6 @@ footer.footer {
   cursor: pointer;
 }
 
-@media(max-width: 970px) {
-  a {
-    display: none;
-
-  }
-}
-
 .container {
   /* 1280px */
   max-width: 128rem;
@@ -115,5 +108,20 @@ footer.footer {
     img {
       height: 5rem;
     }
+  }
+}
+
+/* ============================================================
+DESKTOP FIRST APPROACH (Standard -> Mobile)
+============================================================ */
+
+@media(max-width: 970px) {
+  .hamburger {
+    display: block;
+  }
+  header.header nav {
+    display: none;
+    position: absolute;
+    top: 12rem;
   }
 }

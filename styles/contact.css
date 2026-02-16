@@ -102,14 +102,40 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
 /* 3. Tablets (Landscape) / Small Laptops - Below 1024px **/
 @media screen and (max-width: 1023px) {
   /* *Main navigation often changes to a burger menu here */
+  .contact-page {
+    .form-wrapper {
+      width: 50%;
+    }
+
+    .sub-btn input {
+      width: 35%;
+    }
+  }
 }
 
 /* 4. Tablets (Portrait) - Below 768px **/
 @media screen and (max-width: 767px) {
   /* *Elements start to stack vertically for mobile view */
+  .contact-page {
+    .form-wrapper {
+      width: 80%;
+    }
+    .sub-btn input {
+      width: 35%;
+    }
+  }
 }
 
 /* 5. Smartphones - Below 480px* */
 @media screen and (max-width: 479px) {
   /* *Final tweaks for small screens like iPhone SE */
+  .contact-page {
+    .form-wrapper {
+      width: 99%;
+      margin: 0 auto;
+    }
+    .sub-btn input {
+      width: 55%;
+    }
+  }
 }

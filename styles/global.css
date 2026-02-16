@@ -159,6 +159,12 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
   .logo img {
     margin: 1rem;
   }
+  header.header .header-wrapper {
+    flex-direction: column;
+    height: 18rem;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media(max-width: 475px) {
@@ -169,7 +175,6 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
     min-height: 33rem;
   }
   header.header .header-wrapper {
-    flex-direction: column;
     height: 18rem;
   }
   header.header nav {
@@ -186,9 +191,6 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
 @media(max-width: 375px) {
   footer.footer .footer-wrapper .logo img {
     height: 8rem;
-  }
-  header.header .header-wrapper .logo img {
-    height: 8rem;
-    justify-content: center;
+    padding-left: 0.2rem;
   }
 }

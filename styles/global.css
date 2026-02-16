@@ -58,7 +58,7 @@ footer.footer {
 header.header {
   box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.15);
   .header-wrapper {
-    height: 10rem;
+    height: 12rem;
     display: flex;
     justify-content: space-between;
     ul {
@@ -91,7 +91,7 @@ footer.footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 20rem;
+    height: 12rem;
     .logo {
       display: flex;
       align-items: center;

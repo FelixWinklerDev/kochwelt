@@ -2,7 +2,7 @@
   h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    font-weight: 300;
+    font-weight: 600;
     text-align: center;
   }
   p {
@@ -16,7 +16,8 @@
     padding: 5rem 0;
     img {
       border-radius: 8px;
-      height: 26rem;
+      max-height: 30rem;
+      width: auto;
     }
     .recipe-description {
       display: flex;
@@ -26,7 +27,7 @@
         flex: 1;
       }
       a {
-        margin-bottom: 4rem;
+        margin: 4rem 0;
         &:hover {
           scale: calc(1.01);
         }
@@ -40,6 +41,7 @@
   .recipes-wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 4rem;
     a {
       &:hover {
         scale: calc(1.01)
@@ -48,7 +50,8 @@
     img {
       border-radius: 8px;
       aspect-ratio: 1/1;
-      height: 20rem;
+      max-height: 20rem;
+      width: auto;
       object-fit: cover;
       object-position: center;
     }
@@ -72,7 +75,8 @@
     img {
       border-radius: 8px;
       aspect-ratio: 1/1;
-      height: 20rem;
+      max-height: 20rem;
+      width: auto;
       object-fit: cover;
       object-position: center;
     }
@@ -83,66 +87,49 @@
 DESKTOP FIRST APPROACH (Standard -> Mobile)
 ============================================================ */
 
-/* 1. Large Desktops / 4K - Below 1920px* */
-@media screen and (max-width: 1919px) {
-  /* *Styles for standard screens, adjusting from UltraWide */
-}
-
-/* 2. Standard Laptops (Your MacBook) - Below 1440px* */
-@media screen and (max-width: 1439px) {
-  /* *Adjustments for your main workspace screen size */
-}
-
-/* 3. Tablets (Landscape) / Small Laptops - Below 1024px **/
-@media screen and (max-width: 1023px) {
-  /* *Main navigation often changes to a burger menu here */
-}
-
-/* 4. Tablets (Portrait) - Below 768px **/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 780px) {
   /* *Elements start to stack vertically for mobile view */
-}
-
-/* 5. Smartphones - Below 480px* */
-@media screen and (max-width: 479px) {
-  /* *Final tweaks for small screens like iPhone SE */
-  .main-recipe-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    img {
-      width: 100%;
-      height: auto;
-    }
-    .recipe-description {
+  .start-page {
+    .main-recipe-wrapper {
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      p {
-        padding-top: 1rem;
+      img {
+        height: auto;
+        width: 100%;
+      }
+      .recipe-description {
+        align-items: center;
+        h2 {
+          text-align: center;
+        }
+        p {
+          padding-top: 1rem;
+        }
       }
     }
-  }
-  .recipes-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    a {
-      margin-bottom: 2rem;
+    .recipes-wrapper {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      a {
+        margin-bottom: 2rem;
+      }
+      img {
+        aspect-ratio: 2/1;
+        height: auto;
+        width: 100%;
+      }
     }
-    img {
-      width: 100%;
-      height: auto;
+    .article-wrapper {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      img {
+        aspect-ratio: 2/1;
+        height: auto;
+        width: 100%;
+      }
     }
-  }
-  .article-wrapper {
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-    /* img {
-      width: 100%;
-      height: auto;
-    }
-    p {
-      padding-top: 1rem;
-    } */
   }
 }

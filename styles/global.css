@@ -15,6 +15,7 @@ body {
 }
 main {
   flex-grow: 1;
+  position: relative;
 }
 header.header,
 footer.footer {
@@ -26,23 +27,13 @@ footer.footer {
   font-size: 2.8rem;
   color: #333;
   cursor: pointer;
-  border: solid 0.4rem #333;
+  border: solid 0.2rem #333;
+  padding: 1.2rem;
 }
 
-.header-wrapper {
-  position: relative;
-}
-
-@media(max-width: 970px) {
-  .active-link {
-    display: none;
-  }
-  .sub-link {
-    display: none;
-  }
-  .hamburger {
-    display: flex;
-  }
+.hamburger:hover {
+  color: #008000;
+  border: solid 0.2rem #008000;
 }
 
 .container {

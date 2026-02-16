@@ -25,8 +25,11 @@
       p {
         flex: 1;
       }
-      button {
+      a {
         margin-bottom: 4rem;
+        &:hover {
+          scale: calc(1.01);
+        }
       }
     }
   }

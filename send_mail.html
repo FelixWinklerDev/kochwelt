@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/fonts.css">
   <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/contact.css" />
+
+
   <script src="./scripts/form-script.js"></script>
   <title>Kochwelt</title>
 </head>
@@ -18,7 +21,7 @@
         <nav>
           <ul>
             <li class="active-link"><a href="./index.html">Start</a></li>
-            <li><a href="./recipes/recipe.html">Rezept des Tages</a></li>
+            <li><a href="./recipe.html">Rezept des Tages</a></li>
             <li><a href="./contact.html">Kontakt</a></li>
             <li><a href="./impressum.html">Impressum</a></li>
           </ul>
@@ -26,9 +29,59 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="contact-page">
     <section class="container">
-      <h2>Danke fürs Senden der E-Mail!</h2>
+      <h2>Nachricht erfolgreich versendet!</h2>
+      <p>
+        Vielen Dank für deine Nachricht. Wir melden uns in der Regel innerhalb
+        von 24 Stunden bei dir.
+      </p>
+
+      <button class="sub-btn">Zurück zur Startseite</button>
+      <a href="./index.html"></a>
+
+      <h3>
+        Vielleicht interessiert dich auch ein Rezept unserer Küchenfeen:
+      </h3>
+      <figure>
+        <a href="./recipe-marco.html">
+          <img class="recipe-img" src="./assets/img/recipe/spaghetti.png" alt="Spaghetti Bolognese" />
+        </a>
+        <figcaption>
+          <a href="./recipe-marco.html">Marco-Helge empfiehlt: Die feinste Spaghetti Bolognese</a>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <a href="./recipe-felix.html">
+          <img class="recipe-img" src="./assets/img/recipe/felix.jpg"
+            alt="a picture of Spaghetti Carbonara with parsley und black pepper as garnish" />
+        </a>
+        <figcaption>
+          <a href="./recipe-felix.html">Felix empfiehlt: Spaghetti Carbonara, wie bei der Mamma in Rom</a>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <a href="./recipe-ievgen.html">
+          <img class="recipe-img" src="./assets/img/recipe/felix.png" alt="Spaghetti Bolognese" />
+        </a>
+        <figcaption>
+          <a href="./recipe-ievgen.html">Eugens Rezept</a>
+        </figcaption>
+      </figure>
+
+      <h2>Oder folge uns auf Social-Media:</h2>
+      <div class="social-media-wrapper">
+        <a target="_blank" href="http://facebook.com"><img src="./assets/img/global/facebook-follow.svg"
+            alt="Facebook" /></a>
+
+        <a target="_blank" href="http://instagram.com"><img src="./assets/img/global/instagram-follow.svg"
+            alt="Instagram" /></a>
+
+        <a target="_blank" href="http://twitter.com"><img src="./assets/img/global/x-social-media-follow.svg"
+            alt="Twitter" /></a>
+      </div>
     </section>
   </main>
   <footer class="footer">

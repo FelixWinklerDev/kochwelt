@@ -1,35 +1,37 @@
 const input = document.getElementById("ingredient");
 const button = document.getElementById("multiply");
-const tableZellen = document.querySelectorAll("table tr td:first-child");
+const tableCells = document.querySelectorAll("table tr td:first-child");
 
-function parseMenge(text) {
+function parseAmount(text) {
   const match = text.match(/^([\d.,]+)(.*)$/);
   if (match) {
-    const zahl = parseFloat(match[1].replace(",", "."));
-    const einheit = match[2].trim();
-    return { zahl, einheit };
+    const number = parseFloat(match[1].replace(",", "."));
+    const unit = match[2].trim();
+    return { number, unit };
   }
   return null; 
 }
 
 button.addEventListener("click", () => {
-  const portionen = parseFloat(input.value);
-  if (isNaN(portionen) || portionen < 1) return;
+  const portions = parseFloat(input.value);
+  if (isNaN(portions) || portions < 1) return;
 
-  tableZellen.forEach(zelle => {
-    if (!zelle.dataset.basis) {
-      const parsed = parseMenge(zelle.textContent);
+  tableCells.forEach(cell => {
+    if (!cell.dataset.base) {
+      const parsed = parseAmount(cell.textContent);
       if (parsed) {
-        zelle.dataset.basis = parsed.zahl;
-        zelle.dataset.einheit = parsed.einheit;
+        cell.dataset.base = parsed.number;
+        cell.dataset.unit = parsed.unit;
       }
     }
 
-    if (zelle.dataset.basis) {
-      const basis = parseFloat(zelle.dataset.basis);
-      const neueMenge = basis * portionen;
-      const einheit = zelle.dataset.einheit || "";
-      zelle.textContent = Number.isInteger(neueMenge) ? neueMenge + " " + einheit : neueMenge.toFixed(2) + " " + einheit;
+    if (cell.dataset.base) {
+      const base = parseFloat(cell.dataset.base);
+      const newAmount = base * portions;
+      const unit = cell.dataset.unit || "";
+      cell.textContent = Number.isInteger(newAmount)
+        ? newAmount + " " + unit
+        : newAmount.toFixed(2) + " " + unit;
     }
   });
 });

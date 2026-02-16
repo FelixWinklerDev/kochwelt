@@ -132,11 +132,11 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
   header.header nav {
     display: none;
     position: absolute;
-    top: 8.5rem;
+    top: 17rem;
     right: 0.4rem;
     background-color: rgba(222, 222, 222, 0.888);
     height: 35rem;
-    width: 20rem;
+    width: 100%;
   }
 
 
@@ -177,19 +177,14 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
   header.header .header-wrapper {
     height: 18rem;
   }
-  header.header nav {
-    display: none;
-    position: absolute;
-    top: 17rem;
-    right: 0.4rem;
-    background-color: rgba(222, 222, 222, 0.888);
-    height: 35rem;
-    width: 100%;
-  }
 }
 
 @media(max-width: 375px) {
   footer.footer .footer-wrapper .logo img {
+    height: 8rem;
+    padding-left: 0.2rem;
+  }
+  header.header .header-wrapper .logo img {
     height: 8rem;
     padding-left: 0.2rem;
   }

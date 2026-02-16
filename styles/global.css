@@ -15,7 +15,6 @@ body {
 }
 main {
   flex-grow: 1;
-  position: relative;
 }
 header.header,
 footer.footer {
@@ -133,17 +132,16 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
   header.header nav {
     display: none;
     position: absolute;
-    top: 12rem;
-    right: 1rem;
-    background-color: #fff;
+    top: 8.5rem;
+    right: 0.4rem;
+    background-color: rgba(222, 222, 222, 0.888);
     height: 35rem;
     width: 20rem;
   }
-  .start-page {
-    position: relative;
-  }
 
-  .header-wrapper ul {
+
+
+  header.header .header-wrapper ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,6 +156,9 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
   footer {
     min-height: 18rem;
   }
+  .logo img {
+    margin: 1rem;
+  }
 }
 
 @media(max-width: 475px) {
@@ -165,6 +166,29 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
     flex-direction: column;
   }
   footer {
-    min-height: 32rem;
+    min-height: 33rem;
+  }
+  header.header .header-wrapper {
+    flex-direction: column;
+    height: 18rem;
+  }
+  header.header nav {
+    display: none;
+    position: absolute;
+    top: 17rem;
+    right: 0.4rem;
+    background-color: rgba(222, 222, 222, 0.888);
+    height: 35rem;
+    width: 100%;
+  }
+}
+
+@media(max-width: 375px) {
+  footer.footer .footer-wrapper .logo img {
+    height: 8rem;
+  }
+  header.header .header-wrapper .logo img {
+    height: 8rem;
+    justify-content: center;
   }
 }

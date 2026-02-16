@@ -37,14 +37,6 @@
     display: flex;
     justify-content: center;
   }
-
-  .sub-btn input {
-    background-color: var(--main-green-color);
-    border-radius: 0;
-    width: 25%;
-    margin: 0;
-    color: white;
-  }
 }
 
 /* ============================================================

@@ -42,10 +42,11 @@ footer.footer {
 }
 
 .button {
-  display: flex;
-  align-items: center;
+  display: inline-flex;
   justify-content: center;
+  align-items: center;
   font-size: 1.8rem;
+  margin: 0 auto;
   padding: 1.2rem 5rem;
   white-space: nowrap;
   width: 20rem;
@@ -53,6 +54,9 @@ footer.footer {
   border-radius: 0.1rem;
   color: #fff;
   background-color: var(--main-green-color);
+  &:hover {
+    scale: calc(1.01);
+  }
 }
 
 header.header {

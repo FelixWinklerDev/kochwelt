@@ -1,6 +1,6 @@
 const hamburger = document.getElementById("hamburger");
 const nav = document.querySelector(".main-nav");
-console.log(nav);
+
 const toggleMenu = () => {
   const styles = window.getComputedStyle(nav);
   if (styles.display === "block") {
@@ -9,4 +9,5 @@ const toggleMenu = () => {
   }
   nav.style.display = "block";
 };
+
 hamburger.addEventListener("click", toggleMenu);

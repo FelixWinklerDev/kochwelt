@@ -78,19 +78,7 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
       text-align: center;
     }
 
-    .button-wrapper {
-        display: flex;
-        justify-content: center;
-    }
-    button {
-    background-color: var(--main-green-color);
-    color: white;
-    padding: 0.7rem 3.5rem;
-    margin-left: 0;
-    margin-top: 2rem;
-    
-  }
-      .social-media-wrapper {
+    .social-media-wrapper {
       display: flex;
       justify-content: center;
       margin-bottom: 5rem;
@@ -109,7 +97,7 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
       margin-bottom: 5rem;
       margin-top: 1rem;
     }
-      .social-media-wrapper a{
+    .social-media-wrapper a {
       display: flex;
       justify-content: center;
       margin-top: 1rem;

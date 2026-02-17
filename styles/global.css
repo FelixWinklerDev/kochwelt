@@ -21,18 +21,6 @@ footer.footer {
   flex-shrink: 0;
 }
 
-.hamburger {
-  display: none;
-  font-size: 3rem;
-  color: #333;
-  cursor: pointer;
-  padding: 1.2rem;
-}
-
-.hamburger:hover {
-  color: #008000;
-}
-
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -62,6 +50,13 @@ header.header {
     height: 120px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    nav {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      transform: translateY(0);
+    }
     ul {
       font-size: 2.4rem;
       height: 100%;
@@ -84,6 +79,45 @@ header.header {
       height: 100px;
     }
   }
+}
+
+.burger-menu {
+  width: 30px;
+  height: 25px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  &:hover {
+    span {
+      background-color: #008000;
+    }
+
+  }
+}
+
+.burger-menu span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger-menu.open span:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+
+.burger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.open span:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
 }
 
 footer.footer {
@@ -124,21 +158,22 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
 ============================================================ */
 
 @media(max-width: 970px) {
-  .hamburger {
-    display: block;
+  .burger-menu {
+    display: flex;
   }
   header.header nav {
-    display: none;
     position: absolute;
-    top: 170px;
+    top: 120px;
     right: 4px;
     background-color: rgba(222, 222, 222, 0.888);
     height: 350px;
     width: 100%;
   }
-
-
-
+  header.header nav.hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+  }
   header.header .header-wrapper ul {
     display: flex;
     align-items: center;
@@ -156,12 +191,6 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
   }
   .logo img {
     margin: 1rem;
-  }
-  header.header .header-wrapper {
-    flex-direction: column;
-    height: 180px;
-    justify-content: center;
-    align-items: center;
   }
 }
 

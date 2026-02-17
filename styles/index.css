@@ -16,7 +16,7 @@
     padding: 5rem 0;
     img {
       border-radius: 8px;
-      max-height: 30rem;
+      max-height: 300px;
       width: auto;
     }
     .recipe-description {
@@ -50,7 +50,7 @@
     img {
       border-radius: 8px;
       aspect-ratio: 1/1;
-      max-height: 20rem;
+      max-height: 200px;
       width: auto;
       object-fit: cover;
       object-position: center;
@@ -75,7 +75,7 @@
     img {
       border-radius: 8px;
       aspect-ratio: 1/1;
-      max-height: 20rem;
+      max-height: 200px;
       width: auto;
       object-fit: cover;
       object-position: center;

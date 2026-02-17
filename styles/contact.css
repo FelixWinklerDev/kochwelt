@@ -22,12 +22,12 @@
   input {
     border: none;
     border-radius: 8px;
-    height: 3.2rem;
+    height: 32px;
     margin: 0 0 3rem 0;
   }
 
   textarea {
-    height: 18rem;
+    height: 180px;
     border: none;
     border-radius: 8px;
     margin: 0 0 3rem 0;

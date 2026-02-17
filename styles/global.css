@@ -44,6 +44,11 @@ footer.footer {
   }
 }
 
+.active-link {
+  color: var(--main-green-color);
+  border-bottom: 3px solid var(--main-green-color);
+}
+
 header.header {
   box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.15);
   .header-wrapper {

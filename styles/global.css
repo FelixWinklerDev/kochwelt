@@ -215,26 +215,6 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
       flex-direction: column;
     }
   }
-  input {
-    width: 90%;
-  }
-  .time-details-wrapper {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .resp-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media(max-width: 375px) {
-  .recipe-page .portion-wrapper button {
-    width: 70%;
-    height: 3.4rem;
-    padding: 0;
-  }
 }
 
 @media(max-width: 360px) {

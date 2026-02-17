@@ -128,9 +128,9 @@
     h2 {
       font-size: 2.5rem;
     }
-  }
-  input {
-    width: 90%;
+    input {
+      width: 90%;
+    }
   }
   .time-details-wrapper {
     flex-direction: column;

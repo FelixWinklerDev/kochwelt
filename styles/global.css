@@ -33,10 +33,10 @@ footer.footer {
   align-items: center;
   font-size: 1.8rem;
   margin: 0 auto;
-  padding: 1.2rem 5rem;
+  padding: 1.2rem 4rem;
   white-space: nowrap;
-  width: 200px;
-  border-radius: 0.1rem;
+  max-width: 200px;
+  border-radius: 4px;
   color: #fff;
   background-color: var(--main-green-color);
   &:hover {
@@ -214,11 +214,5 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
     .links_wrapper ul {
       flex-direction: column;
     }
-  }
-}
-
-@media(max-width: 360px) {
-  .br-point {
-    overflow-wrap: break-word;
   }
 }

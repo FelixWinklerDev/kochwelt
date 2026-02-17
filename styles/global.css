@@ -203,6 +203,8 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
   }
   header.header .header-wrapper {
     height: 180px;
+    flex-direction: column;
+    justify-content: center;
   }
   input {
     width: 90%;

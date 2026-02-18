@@ -129,19 +129,24 @@
     h2 {
       font-size: 2.5rem;
     }
+
     input {
       width: 90%;
     }
+
   }
+
   .time-details-wrapper {
     flex-direction: column;
     gap: 0.5rem;
   }
+
   .resp-details {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
 }
 
 @media (max-width: 375px) {
@@ -172,6 +177,7 @@
       padding: 0;
       margin-right: 0;
     }
+
     .time-details-wrapper>div {
       margin-right: 0;
     }

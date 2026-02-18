@@ -3,19 +3,23 @@
   --main-grey-color: #DCDCDC;
   --footer-bg-color: #333;
 }
+
 html,
 body {
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
   font-family: 'Raleway', sans-serif;
 }
+
 main {
   flex-grow: 1;
 }
+
 header.header,
 footer.footer {
   flex-shrink: 0;
@@ -100,7 +104,6 @@ header.header {
     span {
       background-color: #008000;
     }
-
   }
 }
 
@@ -166,6 +169,7 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
   .burger-menu {
     display: flex;
   }
+
   header.header nav {
     position: absolute;
     top: 120px;
@@ -174,11 +178,13 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
     height: 350px;
     width: 100%;
   }
+
   header.header nav.hide {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-20px);
   }
+
   header.header .header-wrapper ul {
     display: flex;
     align-items: center;
@@ -191,9 +197,11 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
   .footer-wrapper {
     flex-direction: column;
   }
+
   footer {
     min-height: 180px;
   }
+
   .logo img {
     margin: 1rem;
   }
@@ -206,11 +214,13 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
       height: 60px;
     }
   }
+
   footer.footer {
     min-height: 330px;
     img {
       scale: calc(0.8);
     }
+
     .links_wrapper ul {
       flex-direction: column;
     }

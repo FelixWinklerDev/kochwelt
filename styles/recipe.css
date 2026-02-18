@@ -39,6 +39,7 @@
 
   td {
     height: 40px;
+    padding: 0.5rem;
   }
 
   td:first-child {
@@ -74,7 +75,7 @@
     margin-bottom: 3rem;
   }
 
-  .time-details-wrapper > div {
+  .time-details-wrapper>div {
     display: flex;
     align-items: center;
     margin-right: 2.5rem;
@@ -171,7 +172,7 @@
       padding: 0;
       margin-right: 0;
     }
-    .time-details-wrapper > div {
+    .time-details-wrapper>div {
       margin-right: 0;
     }
 

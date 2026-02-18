@@ -5,11 +5,13 @@
     font-weight: 600;
     text-align: center;
   }
+
   p {
     font-size: 1.8rem;
     font-weight: 300;
     color: var(--text-color-lighter);
   }
+
   .main-recipe-wrapper {
     display: flex;
     gap: 4rem;
@@ -19,6 +21,7 @@
       max-height: 300px;
       width: auto;
     }
+
     .recipe-description {
       display: flex;
       flex-direction: column;
@@ -34,10 +37,12 @@
       }
     }
   }
+
   .recipes {
     background-color: var(--main-grey-color);
     padding: 5rem 0 6rem 0;
   }
+
   .recipes-wrapper {
     display: flex;
     justify-content: space-between;
@@ -62,9 +67,11 @@
       font-weight: 300;
     }
   }
+
   .article {
     padding: 5rem 0;
   }
+
   .article-wrapper {
     display: flex;
     gap: 4rem;
@@ -98,6 +105,7 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
         height: auto;
         width: 100%;
       }
+
       .recipe-description {
         align-items: center;
         h2 {
@@ -109,6 +117,7 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
         }
       }
     }
+
     .recipes-wrapper {
       flex-direction: column;
       align-items: center;
@@ -122,6 +131,7 @@ DESKTOP FIRST APPROACH (Standard -> Mobile)
         width: 100%;
       }
     }
+
     .article-wrapper {
       flex-direction: column-reverse;
       align-items: center;
